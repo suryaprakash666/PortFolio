@@ -1,0 +1,522 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3586ff;
+  overflow: hidden;
+}
+section .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
+
+.profile {
+  display: flex;
+  max-width: 955px;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  align-items: center;
+  padding: 42px 75px 17px;
+  border: transparent;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); 
+}
+
+  @media (max-width: 991px) {
+    .profile {
+      padding: 0 20px;
+    }
+  }
+
+  .profile-header {
+    margin-left: 17px;
+  }
+
+  @media (max-width: 991px) {
+    .profile-header {
+      max-width: 100%;
+    }
+  }
+
+  .profile-content {
+    gap: 20px;
+    display: flex;
+  }
+
+  @media (max-width: 991px) {
+    .profile-content {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+
+  .profile-description {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 63%;
+    margin-left: 0;
+  }
+
+  @media (max-width: 991px) {
+    .profile-description {
+      width: 100%;
+    }
+  }
+
+  .profile-text {
+    color: #000;
+    align-self: stretch;
+    margin: auto 0;
+    font: bold 14px Arial, sans-serif;
+}
+
+
+  @media (max-width: 991px) {
+    .profile-text {
+      margin-top: 40px;
+    }
+  }
+
+  .profile-image-container {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 37%;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .profile-image-container {
+      width: 100%;
+    }
+  }
+
+  
+
+ 
+
+  .profile-skills {
+    display: flex;
+    margin-top: 42px;
+    width: 479px;
+    max-width: 100%;
+    gap: 20px;
+    font-size: 12px;
+    font: bold 14px Arial, sans-serif;
+    color: #000;
+    font-weight: 400;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 991px) {
+    .profile-skills {
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+  }
+
+  .skill {
+    font-family: Inter, sans-serif;
+  }
+  
+
+  .navbar {
+    overflow: hidden;
+    background-color: #0e0707;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border: transparent;
+    margin: auto;
+    z-index: 9999;
+  }
+  .navbar a {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  } change my css code
+
+
+
+.courses-container {
+  background-color: #fff;
+  max-width: 943px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto auto;
+  margin-top: 20px;
+  border: transparent;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+}
+
+.courses-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .courses-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.course-column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media (max-width: 991px) {
+  .course-column {
+    width: 100%;
+  }
+}
+
+.course-card {
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+  perspective: 1000px;
+}
+
+@media (max-width: 991px) {
+  .course-card {
+    margin-top: 40px;
+  }
+}
+
+.course-image,
+.course-content {
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.course-content {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: #007bff;
+  padding: 20px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flip-card:hover .course-image {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .course-content {
+  transform: rotateY(360deg);
+}
+
+.flip-card {
+  position: relative;
+}
+
+.course-title {
+  font-family: 'Inter', sans-serif;
+  margin: 30px 0 0 18px;
+}
+
+@media (max-width: 991px) {
+  .course-title {
+    margin-left: 10px;
+  }
+}
+.course-name{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel{
+  width: 50%;
+  margin: auto auto;
+  border: transparent;
+  margin-top: 20px;
+
+}
+
+.a {
+  color: red;
+}
+
+.social-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.events-container {
+  background-color: white;
+  display: grid;
+  width: 80%;
+  height: max-content;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 32px 18px 10px;
+  margin: auto auto;
+}
+
+@media (max-width: 991px) {
+  .events-container {
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+  }
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+ 
+}
+
+@media (max-width: 991px) {
+  .event-card {
+    margin-top: 38px;
+  }
+}
+
+.event-image {
+  aspect-ratio: 0.93;
+  width: 100%;
+  border: transparent;
+  border-radius: 10px;
+}
+
+.event-title {
+  font-family: Inter, sans-serif;
+  margin-top: 16px;
+}
+
+/* Floating Animation */
+.payment-methods {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  max-width: 864px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 17px 14px 54px 14px;
+  height: max-content;
+  margin: auto auto;
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  .payment-methods {
+    flex-wrap: wrap;
+  }
+}
+
+.payment-methods img {
+  animation: float 3s ease-in-out infinite;
+}
+
+.payment-methods img:hover {
+  cursor: pointer;
+  position: relative;
+}
+
+.payment-methods img:hover::after {
+  content: "Python";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.visa-icon {
+  width: 54px;
+  
+}
+
+.mastercard-icon {
+  width: 47px;
+}
+
+.amex-icon {
+  width: 39px;
+}
+
+.discover-icon {
+  width: 45px;
+}
+
+.jcb-icon {
+  width: 48px;
+}
+
+.diners-club-icon {
+  width: 41px;
+}
+
+.unionpay-icon {
+  width: 43px;
+}
+
+.paypal-icon {
+  width: 55px;
+}
+
+.android-pay-icon {
+  width: 46px;
+  fill: #a4c439;
+}
+
+.apple-pay-icon {
+  width: 36px;
+}
+
+.amazon-pay-icon {
+  width: 34px;
+  fill: #000;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Show popup animation */
+.show-popup {
+  display: block;
+}
+
+
+
