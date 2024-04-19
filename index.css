@@ -185,7 +185,6 @@ section .air.air4{
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000;
     border: transparent;
     margin: auto;
     z-index: 9999;
@@ -202,7 +201,7 @@ section .air.air4{
   .navbar a:hover {
     background-color: #ddd;
     color: black;
-  } change my css code
+  } 
 
 
 
@@ -321,7 +320,12 @@ section .air.air4{
   justify-content: space-between;
 }
 
-
+.galleryheader{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 10px;
+}
 
 .events-container {
   background-color: white;
