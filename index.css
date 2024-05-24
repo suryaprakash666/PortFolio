@@ -3,14 +3,17 @@
   margin: 0;
   padding: 0;
 }
-section{
+
+
+.section{
   position: relative;
   width: 100%;
-  height: 100vh;
-  background: #3586ff;
+  height: 90vh;
   overflow: hidden;
+  background: linear-gradient(90deg, #08edc7 0%, #0629f2 100%); 
+
 }
-section .air{
+.section .air{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -19,28 +22,28 @@ section .air{
   background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
   background-size: 1000px 100px
 }
-section .air.air1{
+.section .air.air1{
   animation: wave 30s linear infinite;
   z-index: 1000;
   opacity: 1;
   animation-delay: 0s;
   bottom: 0;
 }
-section .air.air2{
+.section .air.air2{
   animation: wave2 15s linear infinite;
   z-index: 999;
   opacity: 0.5;
   animation-delay: -5s;
   bottom: 10px;
 }
-section .air.air3{
+.section .air.air3{
   animation: wave 30s linear infinite;
   z-index: 998;
   opacity: 0.2;
   animation-delay: -2s;
   bottom: 15px;
 }
-section .air.air4{
+.section .air.air4{
   animation: wave2 5s linear infinite;
   z-index: 997;
   opacity: 0.7;
@@ -77,6 +80,8 @@ section .air.air4{
   border-radius: 10px;
   background-color: white;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); 
+  border-bottom-left-radius: 30% 10%;
+  border-bottom-right-radius: 30% 10%;
 }
 
   @media (max-width: 991px) {
@@ -126,7 +131,9 @@ section .air.air4{
     color: #000;
     align-self: stretch;
     margin: auto 0;
+    width: 50vh;
     font: bold 14px Arial, sans-serif;
+
 }
 
 
@@ -181,26 +188,25 @@ section .air.air4{
 
   .navbar {
     overflow: hidden;
-    background-color: #0e0707;
+    background-color: black;
+    border-bottom: 3px solid rgb(248, 243, 243);
     position: sticky;
     top: 0;
     width: 100%;
-    border: transparent;
     margin: auto;
     z-index: 9999;
   }
   .navbar a {
     float: left;
     display: flex;
-    color: white;
+    color: rgb(251, 247, 247);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
   
   }
   .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    text-decoration-color: aqua;
   } 
 
 
@@ -209,7 +215,7 @@ section .air.air4{
   background-color: #fff;
   max-width: 943px;
   padding: 30px 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   margin: auto auto;
   margin-top: 20px;
   border: transparent;
@@ -475,23 +481,11 @@ section .air.air4{
   fill: #000;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-}
 
-.navbar a:hover {
-  text-decoration: underline;
-}
+
+
+
 
 /* Popup styles */
 .popup {
@@ -521,6 +515,5 @@ section .air.air4{
 .show-popup {
   display: block;
 }
-
 
 
