@@ -17,10 +17,18 @@
     });
   });
 
-  document.getElementById('contactLink').addEventListener('mouseover', function() {
-    document.getElementById('popup').style.display = 'block';
-});
+    document.getElementById('contactLink').addEventListener('mouseover', function() {
+      document.getElementById('popup').style.display = 'block';
+  });
 
-document.getElementById('contactLink').addEventListener('mouseout', function() {
-    document.getElementById('popup').style.display = 'none';
-});
+  document.getElementById('contactLink').addEventListener('mouseout', function() {
+      document.getElementById('popup').style.display = 'none';
+  });
+
+  function showContactInfo(){
+    document.getElementById('contactinfo').style.display = 'block';
+  }
+
+  function hideContactInfo(){
+    document.getElementById('contactinfo').style.display = 'none';
+  }
